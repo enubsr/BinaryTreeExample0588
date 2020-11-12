@@ -43,6 +43,7 @@ public abstract class AbstractBinaryTree<E> extends AbstractTree<E> implements B
         return count;
     }
     
+    @Override
     public Iterable<Position<E>> children(Position<E> p){
         List<Position<E>> snapshot = new ArrayList<>(2);
         if(left(p) != null){
